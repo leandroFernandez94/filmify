@@ -1,0 +1,18 @@
+.side-nav{
+  background-color: #4A5043;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 170px;
+}
+
+.side-nav-link:hover{
+  background: #4A5043;
+}
+
+.app-area{
+  height:100vh;
+  margin-left: 170px;
+  background-color: #D6D1B1;
+}
