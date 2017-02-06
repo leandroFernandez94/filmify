@@ -1,5 +1,7 @@
 class MoviesList{
-  constructor(){
+  constructor($http){
+    this.$http = $http;
+    /*
     this.movies = [
       {
         name:'The Man from Earth',
@@ -22,7 +24,15 @@ class MoviesList{
         genres:['Adventure', 'Drama', 'Fantasy']
       }
     ];
+    */
+  }
+  
+  $onInit() {
+    this.$http.get('/movies')
+    .then(resp => this.movies = resp.data);
   }
 }
+
+MoviesList.$inject = ['$http'];
 
 angular.module('movies.moviesList').controller('appMoviesListController',MoviesList);
