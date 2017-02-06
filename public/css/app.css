@@ -18,7 +18,7 @@ a {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 170px;
+  width: 10%;
 }
 
 .side-nav-link:hover{
@@ -30,9 +30,9 @@ a {
 }
 
 .app-area{
+  float:right;
+  width:90%;
   height:100vh;
-  right:0;
-  margin-left: 170px;
   background-color: #32936F;
 }
 

@@ -1,7 +1,7 @@
 angular.module('sideNav').component('appSideNav',{
   template:
   `
-    <aside class="side-nav">
+    <div class="side-nav">
       <div class="separator">
         <div class="row">
           <div class="col-md-12 col-side">
@@ -12,7 +12,7 @@ angular.module('sideNav').component('appSideNav',{
           </div>
         </div>
       </div>  
-    </aside>
+    </div>
   `,
   controller:'SideNavController'
 });
