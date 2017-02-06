@@ -1,5 +1,19 @@
+a {
+  background-color: transparent !important;
+  color: #F0F3BD !important;
+  text-decoration: none !important;
+}
+
+.separator{
+  padding-top:20px;
+}
+
+.col-side{
+  padding-left: 50px !important;
+}
+
 .side-nav{
-  background-color: #4A5043;
+  background-color: #395E66;
   position: fixed;
   top: 0;
   left: 0;
@@ -11,8 +25,23 @@
   background: #4A5043;
 }
 
+.side-list{
+  margin-top:20px;
+}
+
 .app-area{
   height:100vh;
+  right:0;
   margin-left: 170px;
-  background-color: #D6D1B1;
+  background-color: #32936F;
 }
+
+.table-hover tbody tr:hover td {
+  background-color: #395E66;
+}
+
+.table-hover tbody tr:hover th {
+  background-color: #32936F;
+}
+
+

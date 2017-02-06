@@ -1,7 +1,7 @@
 angular.module('movies').component('appMovies',{
   template:
   `
-  Movies
+  <app-movies-list><app-movies-list>
   `
 });
 

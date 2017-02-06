@@ -1,4 +1,4 @@
-angular.module('movies',['ui.router'])
+angular.module('movies',['ui.router','movies.moviesList'])
 .config(($stateProvider,$urlRouterProvider) => {
   $stateProvider.state('movies',{
     url:'/movies',
