@@ -1,6 +1,6 @@
 class SearchTableService {
     constructor(){
-        this.types = {
+        this.categoryRows = {
             movies : [
                 {
                     name:'Title',
@@ -12,7 +12,7 @@ class SearchTableService {
                 },
                 {
                     name:'Genres',
-                    filter:'genre',
+                    filter:'genres',
                     list:true
                 }
             ]

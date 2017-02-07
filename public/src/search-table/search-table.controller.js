@@ -4,7 +4,7 @@ class SearchTable{
   }
 
   $onInit(){
-    this.rows = this.service.types[this.type];
+    this.rows = this.service.categoryRows[this.type];
   }
 }
 
