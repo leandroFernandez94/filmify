@@ -1,1 +1,5 @@
-angular.module('root',['sideNav','movies','tv.series','anime']);
+angular.module('root',[
+    'sideNav',
+    'movies',
+    'tv.series',
+    'anime']);
