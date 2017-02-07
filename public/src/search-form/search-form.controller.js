@@ -4,7 +4,6 @@ class SearchFormController {
     }
 
     search(){
-        console.log(this.searchValue);
         this.onSearch({
             $event:{
                 value: this.searchValue

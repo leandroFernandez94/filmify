@@ -9,7 +9,6 @@ class MoviesController{
     }
 
     searchMovie(event){
-        console.log(event.value);
         this.moviesService.getMovies(event.value)
         .then(resp => this.moviesFiltered = resp.data.found);
     }
