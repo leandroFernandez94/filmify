@@ -5,7 +5,7 @@ var search = {
     },
     controller:'SearchFormController',
     template:`
-        <form class="form-inline" ng-submit="$ctrl.search()">
+        <form class="navbar-form navbar-left" role="search" ng-submit="$ctrl.search()">
             <div class="form-group">
                 <input ng-model="$ctrl.searchValue" type="text" placeholder="Search for a {{$ctrl.currentSearch}}..."></input>
             </div>

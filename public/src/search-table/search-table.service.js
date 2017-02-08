@@ -12,7 +12,7 @@ class SearchTableService {
                 },
                 {
                     name:'Genres',
-                    filter:'genres',
+                    filter:'genre',
                     list:true
                 }
             ]

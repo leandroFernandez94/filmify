@@ -3,8 +3,8 @@ class MoviesService{
         this.http = $http;
     }
 
-    getMovies(item){
-        return this.http.get('/movies',{params:{item:item}});
+    getMovies(params){
+        return this.http.get('/movies',{params:params});
     }
 }
 
