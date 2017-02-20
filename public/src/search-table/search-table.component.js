@@ -15,7 +15,7 @@ var appSearchTable = {
           </tr>
           <tr class="movies-row" ng-repeat="item in $ctrl.list">
             <td ng-repeat="row in $ctrl.categorieRows">
-              <a ng-if="row.list" ng-repeat="elem in item[row.filter]"> {{elem}} </a>
+              <a ng-if="row.list" ng-repeat="elem in item[row.filter] track by $index"> {{elem}} </a>
               <p ng-if="!row.list">{{item[row.filter]}}</p>
             </td>
           </tr>
