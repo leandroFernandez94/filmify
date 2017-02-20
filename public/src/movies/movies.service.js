@@ -1,13 +1,16 @@
 class MoviesService{
-    constructor($http){
-        this.http = $http;
-    }
+  constructor($localStorage){
+      this.localStorage = $localStorage;
+  }
 
-    getMovies(params){
-        return this.http.get('/movies',{params:params});
-    }
+  getMovies(titleToFilter){
+    let movies = this.localStorage.movies.data;
+    if (titleToFilter) return movies.filter(movie => movie.title === titleToFilter)
+    else return movies;
+  }
+    
 }
 
-MoviesService.$inject = ['$http'];
+MoviesService.$inject = ['$localStorage'];
 
 angular.module('movies').service('MoviesService',MoviesService);

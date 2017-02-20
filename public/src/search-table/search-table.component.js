@@ -1,7 +1,8 @@
 var appSearchTable = {
   bindings:{
     type: '@',
-    list: '<'
+    list: '<',
+    categorieRows:'<'
   },
   template:`
   <div class="container">
@@ -10,11 +11,11 @@ var appSearchTable = {
       <div class="col-md-10 col-md-offset-1">
         <table class="table table-bordered table-hover">
           <tr>
-            <th ng-repeat="row in $ctrl.rows">{{row.name}}</th>
+            <th ng-repeat="row in $ctrl.categorieRows">{{row.name}}</th>
           </tr>
           <tr class="movies-row" ng-repeat="item in $ctrl.list">
-            <td ng-repeat="row in $ctrl.rows">
-              <a ng-if="row.list" ng-repeat="elem in item[row.filter] track by $index"> {{elem}} </a>
+            <td ng-repeat="row in $ctrl.categorieRows">
+              <a ng-if="row.list" ng-repeat="elem in item[row.filter]"> {{elem}} </a>
               <p ng-if="!row.list">{{item[row.filter]}}</p>
             </td>
           </tr>
@@ -22,8 +23,7 @@ var appSearchTable = {
       </div>
     </div>  
   </div>
-  `,
-  controller:'SearchTableController'
+  `
 };
 
 

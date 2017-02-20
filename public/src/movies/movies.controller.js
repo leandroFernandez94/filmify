@@ -1,16 +1,30 @@
 class MoviesController{
     constructor(MoviesService){
         this.moviesService = MoviesService;
+        
+        this.categorieRows = [
+          {
+              name:'Title',
+              filter:'title'
+          },
+          {
+              name:'Year',
+              filter:'year'
+          },
+          {
+              name:'Genres',
+              filter:'genres',
+              list:true
+          }
+        ];
     }
 
     $onInit(){
-        this.moviesService.getMovies()
-        .then(resp => this.moviesFiltered = resp.data.found);
+        this.moviesFiltered = this.moviesService.getMovies();
     }
 
     searchMovie(event){
-        this.moviesService.getMovies(event.value)
-        .then(resp => this.moviesFiltered = resp.data.found);
+        this.moviesFiltered = this.moviesService.getMovies(event.value);
     }
 }
 

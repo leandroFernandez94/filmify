@@ -3,9 +3,8 @@ var search = {
         currentSearch: '@',
         onSearch: '&'
     },
-    controller:'SearchFormController',
     template:`
-        <form class="navbar-form navbar-left" role="search" ng-submit="$ctrl.search()">
+        <form class="navbar-form navbar-left" role="search" ng-submit="$ctrl.onSearch({$event:{value:$ctrl.searchValue}})">
             <div class="form-group">
                 <input ng-model="$ctrl.searchValue" type="text" placeholder="Search for a {{$ctrl.currentSearch}}..."></input>
             </div>

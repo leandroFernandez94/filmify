@@ -8,6 +8,7 @@ angular.module('movies').component('appMovies',{
   <app-search-table 
               type="movies" 
               list="$ctrl.moviesFiltered"
+              categorie-rows = "$ctrl.categorieRows"
   ></app-search-table>
   `,
   controller:'MoviesController'
